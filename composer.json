@@ -1,0 +1,37 @@
+{
+    "name": "splittlogic/packagemaker",
+    "description": "PackageDescription",
+    "keywords": [
+        "splittlogic",
+        "packagemaker"
+    ],
+    "homepage": "https://github.com/splittlogic/packagemaker",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "splittlogic@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\packagemaker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\packagemaker\\PackageMakerServiceProvider"
+            ],
+            "aliases": {
+                "packagemaker": "splittlogic\\packagemaker\\Facades\\packagemaker"
+            }
+        }
+    }
+}

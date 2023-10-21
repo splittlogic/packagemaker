@@ -1,0 +1,36 @@
+{
+    "name": "[vendor]/[package]",
+    "description": "[description]",
+    "keywords": [
+        "[vendor]",
+        "[package]"
+    ],
+    "homepage": "https://github.com/[vendor]/[package]",
+    "license": "[license]",
+    "type": "[type]",
+    "authors": [
+        {
+            "name": "[author]",
+            "email": "[email]",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        [require]
+    },
+    "autoload": {
+        "psr-4": {
+            "[vendor]\\[package]\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "[vendor]\\[package]\\[package]ServiceProvider"
+            ],
+            "aliases": {
+                "[package]": "[vendor]\\[package]\\Facades\\[package]"
+            }
+        }
+    }
+}
